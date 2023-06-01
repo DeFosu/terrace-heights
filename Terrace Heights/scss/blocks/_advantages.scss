@@ -1,0 +1,29 @@
+.advantages{
+    padding-top: 80px;
+    .section-title{
+        font-family: 'Lora', serif;
+    }
+    .container-xl{
+        margin-top: 79px;
+        text-align: center;
+    }
+
+    .advantages__item{
+        width: 252px;
+        img{
+            height: 187px;
+        }
+    }
+    .advantages-title{
+        margin-top: 35px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .advantages-text{
+        margin-top: 35px;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 28px;
+    }
+}

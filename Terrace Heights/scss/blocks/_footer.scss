@@ -1,0 +1,40 @@
+.footer{
+    width: 100%;
+    max-width: 1920px;
+    background-color: $bg-color-footer;
+    .container-custom{
+        text-align: center;
+        background-color: $bg-color-footer;
+        padding-left: 186px;
+        padding-right: 235px;
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+
+    .footer__item{
+        max-width: 591px;
+    }
+    .phone{
+        font-family: 'Lora', serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .nav{
+        gap: 21px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    p{
+        margin-top: 22px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+.social{
+    gap: 21px;
+}
