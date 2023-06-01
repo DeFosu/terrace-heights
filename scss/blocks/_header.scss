@@ -11,7 +11,7 @@
 
 header{
     width: 100%;
-    height: 140px;
+    // height: 140px;
     .container-custom{
         background-color: $bg-color-header;
         padding-left: 69px;
@@ -42,8 +42,8 @@ header{
 }
 
 .header-image{
-    // width: 1920px;
-    height: 1050px ;
+    width: 100%;
+    // height: 1050px ;
 }
 
 
