@@ -11,8 +11,8 @@ function readBtn() {
 }
 
 function addToLocal() {
-    typeRoom = $(this).attr('roomType');
-    priceRoom = $(this).attr('roomPrice');
+    typeRoom = $(this).attr('data-type');
+    priceRoom = $(this).attr('data-price');
     localStorage.setItem('typeRoom', typeRoom );
     localStorage.setItem('priceRoom', priceRoom );
 }
