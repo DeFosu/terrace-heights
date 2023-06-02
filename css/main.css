@@ -27,6 +27,11 @@ section {
   background-color: #ffffff;
 }
 
+.container-xxl {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 .container-custom {
   width: 100%;
   max-width: 1920px;
@@ -180,4 +185,52 @@ header .container-custom {
 
 .social {
   gap: 21px;
+}
+
+.booking {
+  text-align: center;
+  padding-bottom: 88px;
+}
+.booking .section-title {
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+}
+.booking .section-subtitle {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49px;
+}
+.booking .card {
+  margin-bottom: 75px;
+  margin-top: 33px;
+  width: 100%;
+}
+.booking .card .card-body {
+  max-width: 774px;
+}
+.booking .card .cart-title {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+}
+.booking .card .card-text {
+  margin-top: 58px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+}
+.booking .card .card-more {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #AA01B9;
+}
+.booking .card .card-price {
+  margin-left: 24px;
+  margin-bottom: 31px;
+  width: 100%;
+  max-width: 216px;
 }
