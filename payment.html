@@ -29,27 +29,15 @@
     <section class="payment">
         <div class="container-custom">
             <div class="container-xxl">
-                <!--  -->
-                <!-- <script>
-                    function serializeForm(formNode) {
-                    const { elements } = formNode
-
-                    Array.from(elements)
-                        .forEach((element) => {
-                        const { name, value } = element
-                        console.log({ name, value })
-                        })
-                    }
-                </script> -->
                 <div class="bootstrap-iso">
                     <div class="container-fluid">
                        <form class="row flex-wrap justify-content-center" method="post" >
                         <div class="first-col form-col col  ">
                             <div class="section-title">Ваші бронювання</div>
                             <div class="form-group room-info">
-                                <p>Тип номеру</p>
-                                <p>дата</p>
-                                <p>ціна</p><br>
+                                <p class="typeRoom">Тип номеру</p>
+                                <p class="dateRoom">дата</p>
+                                <p class="priceRoom">ціна</p><br>
                             </div>
                             <div class="form-group ">
                             <label class="control-label requiredField" for="date">
@@ -59,7 +47,7 @@
                              </span>
                             </label>
                              <div class="input-group">
-                              <input class="form-control" id="date" name="date" type="time"/>
+                              <input class="form-control" id="date" name="time" type="time" required/>
                               <div class="input-group-addon">
                                <i class="fa fa-calendar-check-o">
                                </i>
@@ -82,7 +70,7 @@
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="name" name="name" type="text"/>
+                                 <input class="form-control" id="name" name="firstname" type="text" required/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label requiredField" for="name1">
@@ -91,7 +79,7 @@
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="name1" name="name1" type="text"/>
+                                 <input class="form-control" id="name1" name="secondname" type="text" required/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label requiredField" for="tel">
@@ -100,19 +88,19 @@
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="tel" name="tel" type="text"/>
+                                 <input class="form-control" id="tel" name="tel" type="text" required/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label" for="text2">
                                  Адреса
                                 </label>
-                                 <input class="form-control" id="text2" name="text2" type="text"/>
+                                 <input class="form-control" id="text2" name="address" type="text"/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label" for="text3">
                                  Місто
                                 </label>
-                                 <input class="form-control" id="text3" name="text3" type="text"/>
+                                 <input class="form-control" id="text3" name="sity" type="text"/>
                                </div>
                         </div>
                         <div class="form-col col">
@@ -124,16 +112,16 @@
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="text" name="text" type="text"/>
+                                 <input class="form-control" id="text" name="card-number" type="text" required/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label requiredField" for="name2">
-                                 Ім&rsquo;я з картки
+                                 Ім`я з картки
                                  <span class="asteriskField">
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="name2" name="name2" type="text"/>
+                                 <input class="form-control" id="name2" name="card-name" type="text" required/>
                                </div>
                                <div class="form-group ">
                                 <label class="control-label requiredField" for="date1">
@@ -142,7 +130,7 @@
                                   *
                                  </span>
                                 </label>
-                                 <input class="form-control" id="date1" name="date1" placeholder="MM/YY" type="text"/>
+                                 <input class="form-control" id="date1" name="card-date" placeholder="MM/YY" type="text" required/>
                                </div>
                                <div class="form-group card">
                                  <button class="btn btn-primary " name="submit" type="submit">
@@ -162,16 +150,16 @@
         <div class="container-custom ">
             <div class="container-xxl d-flex justify-content-between flex-wrap">
                 <div class="footer__item">
-                    <ul class="nav d-flex">
+                    <ul class="nav d-flex flex-wrap">
                         <li class="nav-item"><a href="./" class="nav-link">CONTACT</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">PRIVACY & COKIE POLICY</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">TERMS OF USE</a></li>
+                        <li class="nav-item"><a href="./" class="nav-link">PRIVACY & COKIE POLICY</a></li>
+                        <li class="nav-item"><a href="./" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="./" class="nav-link">TERMS OF USE</a></li>
                     </ul>
                     <p>Lörem ipsum kontrad <br> tredel i exosenade. </p>
                 </div>
                 <div class="footer__item">
-                    <a href="#" class="phone">+380 99 8888777</a>
+                    <a href="tel:099-888-8777" class="phone">+380 99 8888777</a>
                     <div class="social d-flex">
                         <div class="social__item">
                             <a href="./">
@@ -194,7 +182,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/payment.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 
 </body>

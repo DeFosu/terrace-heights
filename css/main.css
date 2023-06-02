@@ -158,6 +158,9 @@ header .container-custom {
   border-radius: 0;
   background-color: #d9d9d9;
 }
+.card .card-img-top {
+  height: 281px;
+}
 
 .footer {
   width: 100%;
@@ -244,6 +247,10 @@ header .container-custom {
   margin-bottom: 31px;
   width: 100%;
   max-width: 216px;
+}
+.booking .card .img-fluid {
+  width: 935px;
+  height: 451px;
 }
 
 .payment {
