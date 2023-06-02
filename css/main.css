@@ -236,3 +236,7 @@ header .container-custom {
   width: 100%;
   max-width: 216px;
 }
+
+.payment input {
+  max-width: 384px;
+}
